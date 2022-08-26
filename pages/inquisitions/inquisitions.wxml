@@ -1,0 +1,34 @@
+<view class="inquisitions-view">
+  <view class="tab">
+    <text class="active">待勘验</text>
+    <text>已勘验</text>
+  </view>
+  <view class="list">
+    <view class="inquisitions">
+      <view class="tip">
+        <image class="tip-img" src="../../assets/img/tip.jpg"></image>
+        <text class="type">待勘验</text>
+      </view>
+      <view class="content">
+        <view class="title">
+          <view class="num">
+            <image src="../../assets/img/num.jpg"></image>
+            <text>1</text>
+          </view>
+          <text>关于青岛乐享天成旅行社有限公司的旅行社立许可业务预测系统</text>
+        </view>
+        <view class="time">预约时间： 2022-08-10  10：00：00</view>
+      </view>
+      <view class="bottom">
+        <view class="btn active">邀请相关方</view>
+        <view class="btn">开始远程勘验</view>
+        <view class="btn">查看勘验要点</view>
+      </view>
+    </view>
+    <view class="no-data">
+      <image src="../../assets/img/noData.jpg"></image>
+      <text>暂未查询到您的待勘验业务</text>
+    </view>
+  </view>
+</view>
+

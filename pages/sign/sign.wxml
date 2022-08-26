@@ -1,0 +1,16 @@
+<view class="sign-view">
+  <view class="sign-tip">
+    我郑重承诺：本人及本人提供的各类申请信息均真实准确，许可事项注册地与经营地一致，现场情况与所报材料一致，远程勘验过程中的视频图像信息真实准确，如提供虚假信息骗取行政许可的，本人愿意承担一切后果及法律责任。
+  </view>
+
+  <view class="sign-contain">
+    <view class="signName">
+      <canvas id="canvas" canvas-id="canvas" class="{{ sysType === 'iOS' ? 'canvas' : 'canvas bg000'}}" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+    </view>
+    
+    <view class="btn-wrap">
+      <view class="btn" catchtap="cleardraw">清除</view>
+      <view class="btn" catchtap="uploadImg">同意</view>
+    </view>
+  </view>
+</view>

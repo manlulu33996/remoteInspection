@@ -1,0 +1,35 @@
+<view class="meeting-res-view">
+  <view class="tip">
+    关于测试劳务派遣经营设立许可的业务
+  </view> 
+  <view class="res-li">
+    <view class="li">
+      <icon class="icon-box-img" type="warn" size="16"></icon>
+      <text>查看《营业执照》，确认其注册地址和经营地址一致。</text>
+    </view>
+    <view class="li">
+      <icon class="icon-box-img" type="warn" size="16"></icon>
+      <text>制作并悬挂公司广告牌</text>
+    </view>
+    <view class="li">
+      <icon class="icon-box-img" type="warn" size="16"></icon>
+      <text>有办公所需的设施设备，如办公桌椅，电脑，打印机，办公柜等</text>
+    </view>
+  </view>
+  <view class="success-tip">
+    <icon class="icon-box-img" type="success" size="16"></icon>
+    <text>确认以上信息无误</text>
+  </view>
+  <view class="btn" wx:if="{{resType == 1 || resType == 0}}">确认</view>
+  <view class="btn" wx:if="{{resType == 2 && upLoadImage.length == 0}}" bindtap="upLoadImage">上传整改图片</view>
+  <view class="btn" wx:if="{{resType == 2 && upLoadImage.length > 0}}" bindtap="saveImage">保存整改图片</view>
+  <view class="pic-list">
+    <view class="pic" wx:for="{{upLoadImage}}" wx:key="{{index}}" wx:if="{{item}}">
+      <text class="icon" data-index="{{index}}"  bindtap="removeImage">×</text>
+      <image src="{{item}}"></image>
+    </view>
+    <view class="pic pic-more" wx:if="{{resType == 2 && upLoadImage.length > 0}}" bindtap="upLoadImage">
+      <text>+</text>
+    </view>
+  </view>
+</view>

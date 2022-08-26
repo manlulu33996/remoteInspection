@@ -1,0 +1,51 @@
+/* pages/sign/sign.wxss */
+.sign-view{
+  background: #F4F4F4;
+  height: 100vh;
+}
+.sign-contain {
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height: 800rpx;
+}
+.sign-tip{
+  padding: 30rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  background: #F4F4F4;
+  color: #3d86cf;
+}
+.signName {
+  flex: 1;
+  background: #FFF;
+}
+.canvas {
+  width: 100%;
+  height: 100%;
+}
+.bg000{
+  background-color: #000;
+}
+.btn-wrap{
+  display: block;
+  width:100%;
+  height: 100rpx;
+  margin: 20rpx 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top:40rpx;
+}
+.btn-wrap .btn{
+  width: 240rpx;
+  display: block;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 90rpx;
+  color: #fff;
+  margin: 0 40rpx;
+  background: #3d86cf;
+  font-size: 32rpx;
+}

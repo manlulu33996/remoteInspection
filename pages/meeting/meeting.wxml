@@ -1,0 +1,25 @@
+<view class="meeting-view">
+  <view class="title">青岛市远程勘验系统</view>
+  <view class="tip">
+    <image src="../../assets/img/dingdan.png"></image>
+    <text>会议号</text>
+  </view>
+  <view class="input-box">
+    <input type="text" placeholder="请输入会议号" value="{{ meetingCode }}"  bindblur="changeCode"/>
+  </view>
+  <view class="btn btn-0" bindtap="enterSign">加入会议</view>
+  <view class="btn btn-1" bindtap="getItemList">输入会议号查看勘验事项</view>
+  <view class="btn btn-2" bindtap="getItemResult">查看勘验结果</view>
+
+  <!-- == 弹窗部分 == -->
+  <view class="alert-bg"  wx:if="{{ showAlert }}"></view>
+  <view class="view-item-alert" wx:if="{{ showAlert }}">
+    <view class="alert-tit">劳务派遣经营设立许可</view>
+    <view class="alert-msg">
+      <view class="line">1.劳务派遣经营设立许可</view>
+      <view class="line">1.劳务派遣经营设立许可</view>
+      <view class="line">1.劳务派遣经营设立许可</view>
+    </view>
+    <view class="alert-btn" bindtap="postCode">确定</view>
+  </view>
+</view>

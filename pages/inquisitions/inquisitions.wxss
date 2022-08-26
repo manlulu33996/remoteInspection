@@ -1,0 +1,160 @@
+.inquisitions-view{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding:20rpx 0;
+}
+.tab{
+  width:670rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  border: 1rpx solid #4698ec;
+  font-size: 32rpx;
+  margin: 0 40rpx;
+}
+.tab text{
+  display: block;
+  flex: 1;
+  text-align: center;
+  color: #4698ec;
+}
+.tab text.active{
+  background: #4698ec;
+  color: #fff;
+}
+
+.list{
+  padding-top: 50rpx;
+  flex: 1;
+  overflow: auto;
+  width:100%;
+  margin: 0 auto;
+  padding:50rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.inquisitions{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 50rpx;
+  box-shadow: 0 0 20rpx #ccc;
+  border-radius: 8rpx;
+}
+
+.inquisitions .tip{
+  width: 100%;
+  height: 54rpx;
+  position: relative;
+}
+
+.inquisitions .tip image{
+  width: 100%;
+  height: 54rpx;
+  position: absolute;
+  z-index: 1;
+  top: 0;left: 0;
+}
+
+
+.inquisitions .tip .type{
+  width: 100%;
+  height: 54rpx;
+  position: absolute;
+  z-index: 2;
+  top: 0;right: 0;
+  text-align: right;
+  font-size: 24rpx;
+  line-height: 54rpx;
+  padding-right: 40rpx;
+  color: #d46262;
+}
+
+.inquisitions .content{
+  padding: 28rpx 36rpx 10rpx 70rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #333;
+  position: relative;
+  border-bottom: 3rpx dashed #eee;
+}
+
+.inquisitions .content .num{
+  width: 38rpx;
+  height: 42rpx;
+  position: absolute;
+  top: 34rpx;left: 18rpx;
+}
+
+.inquisitions .content .num image{
+  width: 38rpx;
+  height: 42rpx;
+  position: absolute;
+  top: 0;left: 0;
+}
+
+.inquisitions .content .num text{
+  width: 38rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  position: absolute;
+  top: 0;right: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 20rpx;
+  display: block;
+  padding-right: 4rpx;
+}
+
+.inquisitions .content .time{
+  color: #999;
+  font-size: 24rpx;
+  line-height: 64rpx;
+  height: 64rpx;
+}
+
+.bottom{
+  height: 120rpx;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+  text-align: right;
+}
+.bottom .btn{
+  font-size: 24rpx;
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 2rpx solid #4698ec;
+  padding: 0 18rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  color: #4698ec;
+  font-weight: 500;
+}
+
+.bottom .active{
+  background: #4698ec;
+  color: #fff;
+}
+
+.no-data {
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.no-data image{
+  width: 520rpx;
+  height: 316rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.no-data text{
+  font-size: 36rpx;
+  line-height: 142rpx;
+  color: #999;
+  display: block;
+  margin: 0 auto;
+}
